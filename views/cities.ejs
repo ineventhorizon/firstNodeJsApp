@@ -1,0 +1,10 @@
+<h1>City Names</h1>
+
+<% cities.forEach(function(City){ %>
+   <li> <%=City %> </li>
+ <% }); %>
+
+ <form action="/addCity" method="POST">
+  <input type="text" name="newCity" placeholder="City">
+  <button>Add</button>
+ </form>
